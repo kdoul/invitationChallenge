@@ -9,6 +9,38 @@ body, html {
     background-color: #9F72B9;
 }
 
+.section {
+    height: 100%
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    
+    #home {
+        height: 60%
+    }
+
+    .section {
+        height: auto;
+    }
+
+    body,html {
+        height:100%;
+    }
+
+    .aboutText {
+        margin-bottom: 6%;
+    }
+
+    #who>.container>.row {
+        padding-bottom: 6%;
+    }
+
+    .moreInfo {
+        margin-bottom: 6%;
+    }
+}
+
 /*NAVBAR*/
 
 body>nav {
@@ -38,7 +70,6 @@ body>nav {
 
 #home {
 	background-image: url("../img/handsup.jpg");
-	height: 100%;
     padding-top: 10%;
 	background-attachment: fixed;
     background-position: center;
@@ -78,7 +109,6 @@ body>nav {
 
 #about{
     background-image: url("../img/screen.jpg");
-    height: 100%;
     padding-top: 10%;
     background-attachment: fixed;
     background-position: center;
@@ -100,7 +130,6 @@ body>nav {
 
 #who{
     background-image: url("../img/bokeh.jpg");
-    height: 100%;
     padding-top: 10%;
     background-attachment: fixed;
     background-position: center;
@@ -137,7 +166,6 @@ body>nav {
 /*WHERE AREA*/
 
 #where {
-    height: 100%;
     padding-top: 13%;
     color: #B7B6B5;
     background-color: #353822;
@@ -159,7 +187,7 @@ form>div>label {
 .moreInfo {
     height: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
 }
 
@@ -189,6 +217,7 @@ form>button:hover {
 footer{
     color: #B7B6B5;
     background-color: #0D0908;
+    overflow: hidden;
 }
 
 footer>.rightText{
